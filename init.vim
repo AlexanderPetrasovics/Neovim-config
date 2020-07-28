@@ -6,11 +6,14 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
+set path+=**
 
 call plug#begin('~/.config/nvim/plugged') 
 
 Plug 'gruvbox-community/gruvbox'
 Plug 'tomasiser/vim-code-dark'
+Plug 'jonsmithers/vim-html-template-literals'
+Plug 'jonsmithers/experimental-lit-html-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lervag/vimtex'
@@ -50,12 +53,22 @@ map <leader>wV <C-w>K<CR>
 vnoremap K :m '>+1<CR>gv
 vnoremap J :m '<-2<CR>gv
 
-
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 nnoremap <C-f> :Files<CR>
 nnoremap <C-p> :GFiles<CR>
+
+nmap <F1> :noh<CR>
 nmap <F2> :w<CR>
 imap <F2> <ESC>:w<CR>
-nmap <F1> :noh<CR>
+nmap <F3>:so %<CR>
+
+inoremap hh <Esc>
+inoremap jj <Esc>
+inoremap kk <Esc>
+
+
+
+let g:htl_all_templates = 1 
+
 
