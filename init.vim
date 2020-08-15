@@ -16,9 +16,14 @@ Plug 'jonsmithers/vim-html-template-literals'
 Plug 'jonsmithers/experimental-lit-html-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'lervag/vimtex'
+"Plug 'lervag/vimtex'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
+Plug 'vim-airline/vim-airline'
+Plug 'tpope/vim-fugitive'
+Plug 'takac/vim-hardtime'
+
 
 call plug#end()
 
@@ -50,13 +55,16 @@ map <leader>wj :res -10<CR>
 map <leader>wH <c-w>L<CR>
 map <leader>wV <C-w>K<CR>
 
+"visual block up one line 
 vnoremap K :m '>+1<CR>gv
+"visual block down one line 
 vnoremap J :m '<-2<CR>gv
 
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 nnoremap <C-f> :Files<CR>
 nnoremap <C-p> :GFiles<CR>
+nnoremap <C-l> :Files<CR>
 
 nmap <F1> :noh<CR>
 nmap <F2> :w<CR>
@@ -69,6 +77,8 @@ inoremap kk <Esc>
 
 
 
-let g:htl_all_templates = 1 
+let g:htl_all_templates = 1  "javascript string literals with html
+let g:hardtime_showmsg = 0  
+let g:hardtime_default_on = 0 "use for all buffers
 
 
