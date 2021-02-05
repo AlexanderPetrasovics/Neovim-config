@@ -1,12 +1,22 @@
-
+set nocompatible
 set backspace=indent,eol,start
 set relativenumber
+set nu
 set colorcolumn=100
 set tabstop=4
 set shiftwidth=4
 set expandtab
 set smarttab
 set path+=**
+set nowrap
+set hidden
+set noerrorbells
+set termguicolors
+set noswapfile
+set incsearch
+set scrolloff=8
+
+
 
 call plug#begin('~/.config/nvim/plugged') 
 
@@ -16,14 +26,19 @@ Plug 'jonsmithers/vim-html-template-literals'
 Plug 'jonsmithers/experimental-lit-html-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"Plug 'lervag/vimtex'
+Plug 'lervag/vimtex'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'takac/vim-hardtime'
-
+Plug 'omnisharp/omnisharp-vim'
+Plug 'tfnico/vim-gradle'
+Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
+Plug 'vimwiki/vimwiki'
+Plug 'aklt/plantuml-syntax'
+"Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
 
 call plug#end()
 
@@ -37,6 +52,11 @@ let g:gruvbox_invert_selection='0'
 "colorscheme codedark "<- vim-code-dark
 colorscheme gruvbox
 set background=dark
+
+
+" fix issue with spurious q's appearing
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=0
+set guicursor=
 
 "   -- KEYBOARD MAPPINGS --
 nnoremap <SPACE> <Nop>
@@ -75,7 +95,7 @@ inoremap hh <Esc>
 inoremap jj <Esc>
 inoremap kk <Esc>
 
-
+nnoremap <F4> :!plantuml main.puml <Cr>
 
 let g:htl_all_templates = 1  "javascript string literals with html
 let g:hardtime_showmsg = 0  
