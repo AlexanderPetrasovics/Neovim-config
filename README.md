@@ -1,5 +1,5 @@
 # Neovim-config
-Eigene Neovim-config mit 'Conquer of Completion' und 'Plug' -Pluginmanager.
+Eigene Neovim-config mit 'Conquer of Completion' und 'Plug' -Plugin Manager.
 
 ## Plug Installation
 Standardpfad fuer Linux: 
