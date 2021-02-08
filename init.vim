@@ -49,7 +49,7 @@ if exists('+termguicolors')
 endif
 let g:gruvbox_invert_selection='0'
 
-"colorscheme codedark "<- vim-code-dark
+
 colorscheme gruvbox
 set background=dark
 
