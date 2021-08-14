@@ -21,7 +21,6 @@ set scrolloff=8
 call plug#begin('~/.config/nvim/plugged') 
 
 Plug 'gruvbox-community/gruvbox'
-Plug 'tomasiser/vim-code-dark'
 Plug 'jonsmithers/vim-html-template-literals'
 Plug 'jonsmithers/experimental-lit-html-vim'
 Plug 'pangloss/vim-javascript'
@@ -33,7 +32,6 @@ Plug 'ThePrimeagen/vim-be-good', {'do': './install.sh'}
 Plug 'vim-airline/vim-airline'
 Plug 'tpope/vim-fugitive'
 Plug 'takac/vim-hardtime'
-Plug 'omnisharp/omnisharp-vim'
 Plug 'tfnico/vim-gradle'
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'vimwiki/vimwiki'
@@ -52,7 +50,6 @@ let g:gruvbox_invert_selection='0'
 
 colorscheme gruvbox
 set background=dark
-
 
 " fix issue with spurious q's appearing
 let $NVIM_TUI_ENABLE_CURSOR_SHAPE=0
