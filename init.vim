@@ -25,6 +25,7 @@ Plug 'jonsmithers/vim-html-template-literals'
 Plug 'jonsmithers/experimental-lit-html-vim'
 Plug 'pangloss/vim-javascript'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neovim/nvim-lspconfig'
 Plug 'lervag/vimtex'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'

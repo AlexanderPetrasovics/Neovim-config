@@ -8,6 +8,7 @@ curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.g
 ## Coc-Plugins
 
 - coc-tserver
+- coc-java
 - coc-emmet
 - coc-marketplace
 - coc-angular
