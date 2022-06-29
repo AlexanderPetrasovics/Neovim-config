@@ -2,7 +2,7 @@ set nocompatible
 set backspace=indent,eol,start
 set relativenumber
 set nu
-set colorcolumn=100
+set colorcolumn=120
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -37,6 +37,8 @@ Plug 'tfnico/vim-gradle'
 Plug 'suan/vim-instant-markdown', {'for': 'markdown'}
 Plug 'vimwiki/vimwiki'
 Plug 'aklt/plantuml-syntax'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-repeat'
 "Plug 'iamcco/coc-tailwindcss',  {'do': 'yarn install --frozen-lockfile && yarn run build'}
 
 call plug#end()
@@ -82,7 +84,7 @@ nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
 nnoremap <C-f> :Files<CR>
 nnoremap <C-p> :GFiles<CR>
-nnoremap <C-l> :Files<CR>
+nnoremap <C-b> :Buffers<CR>
 
 nmap <F1> :noh<CR>
 nmap <F2> :w<CR>
@@ -94,9 +96,9 @@ inoremap jj <Esc>
 inoremap kk <Esc>
 
 nnoremap <F4> :!plantuml main.puml <Cr>
+nnoremap <F5> :!cargo run <Cr>
 
 let g:htl_all_templates = 1  "javascript string literals with html
 let g:hardtime_showmsg = 0  
 let g:hardtime_default_on = 0 "use for all buffers
-
 
