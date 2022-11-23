@@ -1,11 +1,16 @@
 # Neovim-config
-Eigene Neovim-config mit 'Conquer of Completion' und 'Plug' -Plugin Manager.
+Neovim-Konfiguration
 
-## Plug Installation
+- 23.11.2022: Entfernung der alten .vim-Konfiguration und Ersetzung durch Lua.
+
+
+## Alter Konfiguration mit 'Conquer of Completion' und 'Plug' -Plugin Manager.
+
+### Plug Installation
 Standardpfad fuer Linux: 
 curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
-## Coc-Plugins
+### Coc-Plugins
 
 - coc-tserver
 - coc-java
